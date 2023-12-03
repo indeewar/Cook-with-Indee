@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background: rgba(0, 0, 0, 0.2) url('background.jpg')no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+            margin: 0; /* Remove default margin to avoid unwanted space */
+        }
+
+        .recipe-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px; /* Adjust the gap between recipes as needed */
+        }
+
+        .recipe {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .recipe img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+        }
+    </style>
+    <title>Recipe Catalog</title>
+</head>
+
+<body>
+    <header>
+        <h1>Recipe Catalog</h1>
+        <p>Explore a variety of delicious recipes </p>
+    </header>
+
+    <div class="recipe-container">
+        <section class="recipe">
+            <img src="recipe1.jpg" alt="Main courses">
+            <h2>Main Courses</h2>
+            <p>Choose your main course!</p>
+            <ul>
+                <li>Grilled Salmon with Lemon and Dill <a href="recipe1.html">View Recipe</a> </li>
+                <li>Chiken parmeasan</li>
+                <li>Beef Stronganoff</li>
+                <li>Butternut Squash Chili</li>
+            </ul>
+        </section>
+
+        <section class="recipe">
+            <img src="recipe2.jpg" alt="Appetizers">
+            <h2>Appetizers</h2>
+            <p>Choose your appetizer!</p>
+            <ul>
+                <li>Bruschetta <a href="recipe2.html">View Recipe</a></li>
+                <li>Caprese Skewers</li>
+                <li>Spinach Artichoke Dip</li>
+                <li>Mini Crab Cakes</li>
+            </ul>
+        </section>
+
+        <section class="recipe">
+            <img src="recipe3.jpg" alt="Desserts">
+            <h2>Desserts</h2>
+            <p>Choose your dessert!</p>
+            <ul>
+                <li>Chocolate Lava Cake <a href="recipe3.html">View Recipe</a></li>
+                <li>Ice Cream Sundaes</li>
+                <li>Mini Cheesecakes</li>
+                <li>Tiramisu</li>
+            </ul>
+        </section>
+
+        <section class="recipe">
+            <img src="recipe4.jpg" alt="Drinks">
+            <h2>Drinks</h2>
+            <p>Choose your drink!</p>
+            <ul>
+                <li>Strawberry Margarita <a href="recipe4.html">View Recipe</a></li>
+                <li>Espresso Martini</li>
+                <li>Italian Soda</li>
+                <li>Fizzy Fruit Punch</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Cook with Indee. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

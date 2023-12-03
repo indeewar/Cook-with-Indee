@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            background: rgba(0, 0, 0, 0.2) url('background.jpg')no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>Have questions or feedback? Reach out to us!</p>
+    </header>
+
+    <section id="contact-form">
+        <form action="submit_feedback.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Cook with Indee. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
